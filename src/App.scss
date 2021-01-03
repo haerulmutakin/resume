@@ -1,9 +1,13 @@
 .App {
-    width: 70vw;
+    width: 65vw;
     height: 100vh;
     margin: 0 auto;
     padding: 0 10px;
     @media screen and (max-width: 576px) {
         width: 100%;
     }
+}
+
+.content {
+    margin-top: 40px;
 }
