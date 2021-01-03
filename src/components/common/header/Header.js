@@ -1,6 +1,8 @@
 import React from 'react';
 import './Header.scss';
 import BrowserHistory from '../../../helpers/history/BrowserHistory';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const menus = [
     {
@@ -37,6 +39,9 @@ const Header = () => {
                     return <li key={index} onClick={handleMenuClick.bind(this, item.url)}>{item.name}</li>
                 })}
             </ul>
+            <div className="navigation-toggle">
+                <FontAwesomeIcon icon={faBars} />
+            </div>
         </div>
     )
 }
