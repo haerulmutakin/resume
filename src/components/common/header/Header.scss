@@ -1,0 +1,27 @@
+.header {
+    width: 100%;
+    // border: 1px solid black;
+    display: flex;
+    // justify-content: space-between;
+    align-items: flex-end;
+    height: 80px;
+}
+
+.menu-list {
+    display: flex;
+    font-weight: bold;
+    li {
+        margin-left: 25px;
+        cursor: pointer;
+        transition: color 0.3s;
+        &:hover {
+            color: #61D0D6;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .menu-list {
+        display: none;
+    }
+}
