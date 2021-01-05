@@ -1,0 +1,52 @@
+.resume-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume-left-container {
+    width: 68%;
+    margin-right: 5px;
+}
+
+.resume-right-container {
+    width: 29%;
+}
+
+.resume-section {
+    margin-bottom: 15px;
+}
+.resume-section-title {
+    line-height: 34px;
+    border-bottom: 1px solid #4D4D4D;
+    margin-bottom: 15px;
+    svg {
+        margin-right: 10px;
+    }
+}
+
+.experience-section {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+div.dot {
+    &:before {
+        content: "";
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #4D4D4D;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .resume-container {
+        display: block;
+    }
+
+    .resume-left-container, .resume-right-container {
+        width: 100%;
+    }
+}
