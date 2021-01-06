@@ -6,7 +6,10 @@ import { faAlignCenter, faGlobe, faBook, faGraduationCap, faBriefcase } from '@f
 const Resume = () => {
     return (
         <React.Fragment>
-            <h2 className="page-title">Resume</h2>
+            <div className="content-header">
+                <h2 className="page-title">Resume</h2>
+                <button className="btn header-btn">DOWNLOAD RESUME</button>
+            </div>
             <div className="resume-container">
                 <div className="resume-left-container">
                     <section className="resume-section">
@@ -74,18 +77,13 @@ const Resume = () => {
                     <section className="resume-section">
                         <h3 className="resume-section-title">
                             <FontAwesomeIcon icon={faGlobe} />
-                            Languages
+                            Programming Languages
                         </h3>
                         <div className="resume-section-content">
                             <p>Javascript</p>
                             <p>Typescript</p>
                             <p>Java</p>
-                            <p>Kotlin</p>
-                            <p>PHP</p>
-                            <p>HTML</p>
-                            <p>CSS</p>
-                            <p>SASS</p>
-                            <p>SQL</p>
+                            <p>CSS/SCSS/SASS</p>
                         </div>
                     </section>
                     <section className="resume-section">
@@ -96,10 +94,8 @@ const Resume = () => {
                         <div className="resume-section-content">
                             <p>React js</p>
                             <p>Angular</p>
-                            <p>Angular js</p>
                             <p>Redux js</p>
-                            <p>Vue</p>
-                            <p>Svelte</p>
+                            <p>Spring Boot</p>
                         </div>
                     </section>
                 </div>

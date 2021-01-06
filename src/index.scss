@@ -15,11 +15,28 @@ h1, h2, h3, h4, h5, h6, p {
 h2.page-title {
   font-size: 26px;
   text-transform: uppercase;
-  margin-bottom: 40px;
 }
 
 ul, ol {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.btn {
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.header-btn {
+  background-color: #84354e;
+  color: #ffffff;
+}
+
+.content-header {
+  width: 100%;
+  margin-bottom: 30px;
 }
