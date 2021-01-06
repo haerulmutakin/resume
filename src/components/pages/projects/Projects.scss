@@ -1,0 +1,23 @@
+.project-section {
+    background-color: #F4ECE6;
+    width: 100%;
+    margin-bottom: 20px;
+    .project-info {
+        display: flex;
+        padding: 10px;
+    }
+    img {
+        width: 300px;
+        margin-right: 15px;
+    }
+    ul.project-tags {
+        background-color: #ffffff;
+        padding: 12px 5px;
+        li {
+            display: inline-block;
+            margin: 0 5px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+    }
+}
