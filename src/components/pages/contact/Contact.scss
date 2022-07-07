@@ -1,0 +1,51 @@
+.contact-container {
+    display: flex;
+    width: 100%;
+}
+
+.message-form {
+    padding: 20px 15px;
+    width: 60%;
+    background-color: #FFFFFF;
+}
+
+.send-btn {
+    min-width: 120px;
+    background-color: #79359c;
+    color: #FFFFFF;
+}
+
+.socials-contact {
+    margin-left: 20px;
+}
+
+.contact-socials {
+    display: flex;
+    margin-bottom: 10px;
+    li {
+        margin-right: 15px;
+        font-size: 36px;
+    }
+}
+
+.contact-private {
+    li {
+        span {
+            font-weight: bold;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .contact-container {
+        flex-direction: column-reverse;
+        .message-form, .socials-contact {
+            width: 100% !important;
+            box-sizing: border-box;
+        }
+        .socials-contact {
+            margin-left: 0;
+            margin-bottom: 20px;
+        }
+    }
+}

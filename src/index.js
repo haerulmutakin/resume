@@ -1,12 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
-import App from './App';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+const App = React.lazy(() => import('./App'));
+
+const loadingElement = () => {
+  return (
+    <div className="tunggu">
+      <img alt="loading" src={process.env.PUBLIC_URL + '/img/loading.gif'} />
+      <span>Loading...</span>
+    </div>
+  )
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <React.Suspense fallback={loadingElement()}>
+      <App />
+    </React.Suspense>
   </React.StrictMode>,
   document.getElementById('root')
 );

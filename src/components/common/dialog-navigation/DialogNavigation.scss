@@ -5,7 +5,35 @@
     right: 0;
     bottom: 0;
     z-index: 100;
-    overflow: hidden;
     background-color: #4D4D4D;
-    color: white;
+    color: #E6DACE;
+    padding: 0 10px;
+}
+
+.modal-nav-header {
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.modal-nav-toggle {
+    width: 50px;
+    height: 50px;
+    background-color: #4D4D4D;
+    color: #E6DACE;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.modal-nav-menu {
+    width: 100%;
+    text-align: center;
+    li {
+        margin: 25px 0;
+        font-size: 18px;
+    }
 }
